@@ -15,14 +15,13 @@
       "module-resolver",
       {
         "alias": {
-          "@config": "./src/config",
-          "@models": "./src/models",
-          "@middlewares": "./src/middlewares",
-          "@controllers": "./src/controllers",
-          "@views": "./src/views"
+          "@modules/*": "./src/modules",
+          "@config/*": "./src/config",
+          "@shared/*": "./src/shared"
         }
       }
-    ]
+    ],
+    ["babel-plugin-transform-typescript-metadata"]
   ],
   "ignore": ["**/*.spec.ts"]
 }

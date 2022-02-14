@@ -6,8 +6,7 @@
   "extends": [
     "airbnb-base",
     "prettier",
-    "plugin:import/errors",
-    "plugin:import/warnings",
+    "plugin:import/recommended",
     "plugin:import/typescript"
   ],
   "globals": {
@@ -23,6 +22,8 @@
   "rules": {
     "prettier/prettier": "error",
     "import/no-unresolved": "warn",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
