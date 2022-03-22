@@ -38,7 +38,7 @@ class App {
 
   routes() {
     this.server.use(routes);
-    this.server.use('/files', express.static(UploadConfig.directory));
+    this.server.use('/files', express.static(UploadConfig.uploadsFolder));
   }
 
   handleErrors() {
